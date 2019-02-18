@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 html {
 	box-sizing: border-box;
-	width: 1000px;
+	
 	align-content: center;
 	
 }
@@ -88,20 +88,20 @@ html {
 
 }
 body header {
-	padding: 10px 50px;
+	padding: 10px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	
 }
 body header nav {
-	padding: 10px 50px;
+	/* padding: 10px 50px; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	opacity: .5;
 }
-body header nav p, a{
+body header nav p{
 	margin-left: 40px;
 }
 @media( max-width: 800px ){
@@ -125,9 +125,15 @@ body header nav p, a{
 	}
 
 }
+@media( max-width: 800px ){
+	.top-text {
+		text-align: center;
+	}
+
+}
 .top-content {
-	width: 95%;
-	margin-left: 30px;
+	width: 100%;
+	margin-left: 0px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid black;
 	display: flex;
@@ -146,7 +152,7 @@ body header nav p, a{
 	text-align: center;
 }
 .top-text {
-	
+	/* margin-left: 100px; */
 	margin-top: 50px;
 }
 
@@ -161,12 +167,14 @@ body header nav p, a{
 .middle-content {
 	display: flex;
 	flex-direction: row;
-	margin: 30px;
-	margin-left: 60px;
+	margin: 20px 5px;
+	justify-content: center;
+	/* margin: 30px; */
+	/* margin-left: 60px; */
 }
 .middle-content section {
 	width: 40%;
-	margin: 20px 5%;
+	/* margin: 20px 5%; */
 }
 
 .middle-header {
@@ -177,7 +185,7 @@ body header nav p, a{
 	
 }
 .middle-info {
-	margin: 30px;
+	/* margin: 30px; */
 	display:flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -191,12 +199,12 @@ body header nav p, a{
 	height: auto;
 }
 .under-image {
-	margin-bottom: 50px; 
+	margin: 50px 0px; 
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 30px;
 	border-bottom: 1px solid black;
-	margin: 30px;
+	/* margin: 30px; */
 	justify-content: space-evenly;
 } 
 
@@ -206,11 +214,12 @@ body header nav p, a{
 	flex-direction: column;
 	justify-content: space-evenly;
 	text-align: left;
+	margin-right: 5px;
 }
 
 
 .contact {
-	margin-left: 50px;
+	
 	display: flex;
 	flex-direction: column;
 	text-align: left;
@@ -277,6 +286,7 @@ ul {
 	body header {
 		flex-direction: column-reverse;
 		align-items: center;
+		padding: 0px;
 	}
 }
 
@@ -287,7 +297,8 @@ ul {
 		padding-bottom:30px;
 		margin-left: 0px;
 		text-align: center;
-		border: 1px solid black;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
 	}
 }
 @media( max-width: 500px ){
@@ -304,8 +315,8 @@ ul {
 @media( max-width: 500px ){
 	.header-photo{
 		display:block;
-		margin-left: auto;
-		margin-right: auto;
+
+		margin: 10px auto;
 		width: 50%;
 		
 	}
@@ -314,13 +325,15 @@ ul {
 	.top-text {
 		width: 100%;
 		height: auto;
-		margin: none;
+		margin: 0px;
+		justify-content: center;
 	}
 }
 @media( max-width: 500px ){
 	.middle-content {
 		flex-direction: column;
-		margin: 0;
+		width: 100%;
+		margin: 10px 5px;
 		
 	}
 }
@@ -334,19 +347,29 @@ ul {
 	.middle-img img{
 		width: 100%;
 		height:50%;
-		margin-left: 50px;
+		margin: 10px 5px;
 	}
 }
 @media( max-width: 500px ){
 	.under-image {
 		flex-direction: column
 		
+		
 	}
 }
 @media( max-width: 500px ){
 	.under-image section{
 		width: 90%;
-		margin-top: 10px;
+		
+		margin: 10px 5px;
+		
+	}
+}
+@media( max-width: 500px ){
+	.contact {
+		width: 90%;
+		
+		margin: 10px 5px;
 		
 	}
 }
